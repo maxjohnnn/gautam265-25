@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101d38">
+
+<title>Market Insights | Stock Market Learning</title>
+
+<meta name="description" content="Learn Nifty, Bank Nifty, Options Trading and Technical Analysis with our stock market educational community.">
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+ font-family:Arial,Helvetica,sans-serif;
+ background:#eef2f8;
+ color:#17243b;
+ padding:14px;
+}
+
+.container{
+ max-width:440px;
+ margin:15px auto;
+ background:white;
+ border-radius:20px;
+ overflow:hidden;
+ box-shadow:0 8px 35px rgba(20,35,60,.09);
+}
+
+.header{
+ background:#101d38;
+ color:white;
+ text-align:center;
+ padding:30px 20px 35px;
+}
+
+.top-tag{
+ display:inline-block;
+ background:#1d3b35;
+ color:#76e8ad;
+ padding:8px 14px;
+ border-radius:30px;
+ font-size:10px;
+ letter-spacing:1px;
+ margin-bottom:22px;
+}
+
+.logo{
+ width:78px;
+ height:78px;
+ object-fit:cover;
+ background:white;
+ padding:4px;
+ border-radius:18px;
+ margin-bottom:14px;
+}
+
+.header h1{
+ font-size:27px;
+ letter-spacing:1px;
+}
+
+.header .small{
+ color:#b7c6df;
+ font-size:11px;
+ letter-spacing:2px;
+ margin-top:8px;
+}
+
+.hero{
+ padding:30px 20px 24px;
+ text-align:center;
+}
+
+.hero h2{
+ font-size:27px;
+ line-height:1.3;
+ color:#17243b;
+ margin-bottom:12px;
+}
+
+.hero p{
+ font-size:14px;
+ color:#69778d;
+ line-height:1.7;
+}
+
+.gold-line{
+ width:55px;
+ height:3px;
+ background:#bd974e;
+ margin:17px auto 0;
+ border-radius:10px;
+}
+
+.section{
+ padding:10px 20px 25px;
+}
+
+.section-title{
+ text-align:center;
+ font-size:21px;
+ margin-bottom:7px;
+}
+
+.section-sub{
+ text-align:center;
+ color:#8490a2;
+ font-size:12px;
+ margin-bottom:20px;
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:12px;
+}
+
+.item{
+ background:#f5f7fb;
+ padding:17px 10px;
+ border-radius:12px;
+ border:1px solid #edf0f5;
+}
+
+.item-icon{
+ font-size:25px;
+ margin-bottom:10px;
+}
+
+.item h3{
+ font-size:13px;
+ margin-bottom:7px;
+}
+
+.item p{
+ font-size:11px;
+ color:#778397;
+ line-height:1.5;
+}
+
+.why{
+ margin:0 20px 25px;
+ background:#101d38;
+ padding:23px 19px;
+ border-radius:15px;
+ color:white;
+}
+
+.why h2{
+ font-size:20px;
+ margin-bottom:17px;
+}
+
+.point{
+ display:flex;
+ align-items:flex-start;
+ gap:10px;
+ margin-bottom:14px;
+ font-size:13px;
+ color:#e0e9f5;
+ line-height:1.5;
+}
+
+.check{
+ color:#75e4a5;
+ font-weight:bold;
+ font-size:16px;
+}
+
+.steps{
+ padding:0 20px 25px;
+}
+
+.step{
+ display:flex;
+ align-items:center;
+ gap:13px;
+ margin-bottom:14px;
+}
+
+.number{
+ width:32px;
+ height:32px;
+ flex-shrink:0;
+ background:#e9f0ff;
+ color:#2463d4;
+ border-radius:50%;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ font-weight:bold;
+}
+
+.step p{
+ font-size:13px;
+ color:#56647a;
+ line-height:1.5;
+}
+
+.join-area{
+ background:#f4f7fc;
+ padding:25px 20px;
+ text-align:center;
+}
+
+.join-area h2{
+ font-size:22px;
+ margin-bottom:10px;
+}
+
+.join-area p{
+ color:#758196;
+ font-size:13px;
+ line-height:1.6;
+ margin-bottom:19px;
+}
+
+.join-btn{
+ display:block;
+ width:100%;
+ background:#2463d4;
+ color:white;
+ text-decoration:none;
+ padding:17px 10px;
+ border-radius:12px;
+ font-size:15px;
+ font-weight:bold;
+ letter-spacing:.3px;
+}
+
+.join-note{
+ font-size:10px;
+ color:#8993a5;
+ margin-top:12px;
+}
+
+.disclaimer{
+ margin:20px;
+ padding:14px;
+ background:#fff9ed;
+ border:1px solid #f1e5c8;
+ border-radius:10px;
+ color:#82704c;
+ font-size:10px;
+ line-height:1.7;
+}
+
+.footer{
+ border-top:1px solid #edf0f5;
+ text-align:center;
+ padding:20px 10px;
+ font-size:12px;
+ color:#78859a;
+}
+
+.footer a{
+ color:#2463d4;
+ text-decoration:none;
+ font-weight:bold;
+}
+
+@media(max-width:360px){
+ .header h1{font-size:23px;}
+ .hero h2{font-size:24px;}
+ .item{padding:14px 8px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<header class="header">
+
+ <span class="top-tag">
+ STOCK MARKET EDUCATION
+ </span>
+
+ <br>
+
+ <img src="logo.jpg"
+ class="logo"
+ alt="Market Insights Logo">
+
+ <h1>MARKET INSIGHTS</h1>
+
+ <p class="small">
+ LEARN • ANALYSE • GROW
+ </p>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+ <h2>Understand The Market Better</h2>
+
+ <p>
+ Your journey towards better stock market
+ knowledge starts here. Learn market concepts,
+ technical analysis and trading fundamentals
+ with our educational community.
+ </p>
+
+ <div class="gold-line"></div>
+
+</section>
+
+<!-- LEARNING TOPICS -->
+
+<section class="section">
+
+ <h2 class="section-title">
+ What You Will Learn
+ </h2>
+
+ <p class="section-sub">
+ Explore important stock market topics
+ </p>
+
+ <div class="grid">
+
+  <div class="item">
+   <div class="item-icon">📊</div>
+   <h3>NIFTY & BANK NIFTY</h3>
+   <p>Understand index movements and market trends.</p>
+  </div>
+
+  <div class="item">
+   <div class="item-icon">📈</div>
+   <h3>Technical Analysis</h3>
+   <p>Learn charts, indicators and price action basics.</p>
+  </div>
+
+  <div class="item">
+   <div class="item-icon">💹</div>
+   <h3>Options Trading</h3>
+   <p>Explore options concepts and their fundamentals.</p>
+  </div>
+
+  <div class="item">
+   <div class="item-icon">📰</div>
+   <h3>Daily Market Updates</h3>
+   <p>Stay informed about important market developments.</p>
+  </div>
+
+  <div class="item">
+   <div class="item-icon">📚</div>
+   <h3>Trading Basics</h3>
+   <p>Build your understanding of stock market concepts.</p>
+  </div>
+
+  <div class="item">
+   <div class="item-icon">🎓</div>
+   <h3>Beginner Learning</h3>
+   <p>Learn important concepts step by step.</p>
+  </div>
+
+ </div>
+
+</section>
+
+<!-- WHY JOIN -->
+
+<div class="why">
+
+ <h2>Why Join Our Community?</h2>
+
+ <div class="point">
+  <span class="check">✓</span>
+  <span>Easy-to-understand educational content</span>
+ </div>
+
+ <div class="point">
+  <span class="check">✓</span>
+  <span>Regular market-related educational updates</span>
+ </div>
+
+ <div class="point">
+  <span class="check">✓</span>
+  <span>Beginner-friendly learning resources</span>
+ </div>
+
+ <div class="point">
+  <span class="check">✓</span>
+  <span>Improve your stock market knowledge</span>
+ </div>
+
+</div>
+
+<!-- HOW TO JOIN -->
+
+<section class="steps">
+
+ <h2 class="section-title">
+ How To Join?
+ </h2>
+
+ <p class="section-sub">
+ Join our Telegram community in 3 easy steps
+ </p>
+
+ <div class="step">
+  <div class="number">1</div>
+  <p>Click on the Join Telegram button below.</p>
+ </div>
+
+ <div class="step">
+  <div class="number">2</div>
+  <p>Open our official Telegram channel.</p>
+ </div>
+
+ <div class="step">
+  <div class="number">3</div>
+  <p>Join the community and explore learning content.</p>
+ </div>
+
+</section>
+
+<!-- JOIN BUTTON -->
+
+<section class="join-area">
+
+ <h2>Start Your Learning Journey</h2>
+
+ <p>
+ Join our Telegram community and explore
+ stock market educational content.
+ </p>
+
+ <a href="https://t.me/YOUR_CHANNEL_LINK"
+ class="join-btn"
+ target="_blank"
+ rel="noopener">
+ JOIN TELEGRAM CHANNEL →
+ </a>
+
+ <div class="join-note">
+ Connect with our stock market learning community
+ </div>
+
+</section>
+
+<!-- DISCLAIMER -->
+
+<div class="disclaimer">
+
+ <b>IMPORTANT DISCLAIMER</b><br>
+
+ This channel is intended for educational and
+ informational purposes only. We do not guarantee
+ profits or returns. Stock market investments and
+ trading involve financial risks. Please do your
+ own research before making any financial decision.
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+ <p>
+ Ads Managed By
+ <a href="https://t.me/maxjohn"
+ target="_blank" rel="noopener">
+ MAXJOHN
+ </a>
+ </p>
+
+ <br>
+
+ <a href="https://t.me/maxjohn"
+ target="_blank" rel="noopener">
+ Telegram Support
+ </a>
+
+ <p style="margin-top:12px;font-size:10px;">
+ © 2026 Market Insights. All Rights Reserved.
+ </p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
